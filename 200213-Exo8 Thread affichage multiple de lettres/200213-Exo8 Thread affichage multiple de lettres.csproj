@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_200213_Exo8_Thread_affichage_multiple_de_lettres</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="IHMConsole">
+      <HintPath>..\..\libs\Vincent\IHMConsole\IHMConsole\bin\Debug\netcoreapp2.0\IHMConsole.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

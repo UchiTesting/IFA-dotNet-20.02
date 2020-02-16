@@ -4,48 +4,65 @@ namespace _200204_Exo1
 {
     class Program
     {
+        static Personne[] personnes = new Personne[0];
+
         static void Main(string[] args)
         {
             Console.WriteLine("Exo1: Gestion patients d'un hôpital.");
-            Personne[] personnes = new Personne[0];
             char choix;
             int taille = 0;
 
             do
             {
-                Console.Write("Veuillez choisir un type de personne (h: Homme, f: Femme, m: Mineure): ");
+                choix = '\0';
+                Console.Write("Veuillez choisir un type de personne (h: Homme, f: Femme, m: Mineur(e), v: visualiser, q:quitter): ");
                 choix = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                if (string.Format("hfm").Contains(choix))
+                {
+                    taille++;
+                    Array.Resize(ref personnes, taille);
+                }
+
                 switch (choix)
                 {
                     case 'h':
-                        taille++;
-                        Array.Resize(ref personnes, taille);
+                        Console.WriteLine("Homme\n========\n");
                         personnes[taille - 1] = askPersonne();
 
                         break;
                     case 'f':
-                        taille++;
-                        Array.Resize(ref personnes, taille);
+                        Console.WriteLine("Femme\n========\n");
                         personnes[taille - 1] = askFemme();
                         break;
                     case 'm':
-                        taille++;
-                        Array.Resize(ref personnes, taille);
                         personnes[taille - 1] = askMineur();
                         break;
+                    case 'v':
+                        voirListePersonnes();
+                        break;
                     default:
-                        Console.WriteLine("Veuillez saisir une option valide (h: Homme, f: Femme, m: Mineure ou q pour quitter).");
+                        Console.WriteLine("Veuillez saisir une option valide (h: Homme, f: Femme, m: Mineur(e), v: voir liste ou q pour quitter).");
                         break;
                 }
 
             } while (choix != 'q');
+        }
 
-            // Affichage
-            foreach (Personne p in personnes)
+        private static void voirListePersonnes()
+        {
+            if (personnes.Length > 0)
             {
-                Console.WriteLine(p);
+                foreach (Personne p in personnes)
+                {
+                    Console.WriteLine(p.ToString());
+                }
             }
-
+            else
+            {
+                Console.WriteLine("La liste est vide.");
+            }
         }
 
         static Personne askPersonne()
@@ -63,6 +80,7 @@ namespace _200204_Exo1
                     Console.Write("Date de Naissance: ");
                     string dateDeNaissance = Console.ReadLine();
                     p = new Personne(nom, prenom, dateDeNaissance);
+                    ok = true;
                 }
                 catch (FormatException)
                 {
@@ -84,11 +102,12 @@ namespace _200204_Exo1
             {
                 try
                 {
-                    Console.WriteLine("Mienur:\n======== ");
+                    Console.WriteLine("Mineur:\n======== ");
                     p = askPersonne();
                     Console.WriteLine("Tuteur:\n======== ");
                     tuteur = askPersonne();
                     m = new Mineur(p, tuteur);
+                    ok = true;
                 }
                 catch (FormatException)
                 {
@@ -114,6 +133,7 @@ namespace _200204_Exo1
                     Console.WriteLine("Nom de jeune fille: ");
                     nomDeJeuneFille = Console.ReadLine();
                     f = new Femme(p, nomDeJeuneFille);
+                    ok = true;
                 }
                 catch (FormatException)
                 {
@@ -123,7 +143,5 @@ namespace _200204_Exo1
 
             return f;
         }
-
-
     }
 }

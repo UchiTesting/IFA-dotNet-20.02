@@ -4,20 +4,22 @@ using System.Text;
 
 namespace _200204_Exo3_Calcul_Stats_Perso
 {
-    class Equipement
+    public class Equipement
     {
-        string nom;
-        Stats stats;
+        public string Nom { get; set; }
+        public int Atk { get; set; }
+        public int Def { get; set; }
 
-        public Equipement(string nom, Stats stats)
+        public Equipement(string nom, int atk, int def)
         {
-            this.nom = nom;
-            this.stats = stats;
+            Nom = nom;
+            Atk = atk;
+            Def = def;
         }
 
-        public Stats getStats()
+        override public string ToString()
         {
-            return this.stats;
+            return Nom + " -> " + "ATK: "+ Atk +", DEF: "+Def;
         }
     }
 }

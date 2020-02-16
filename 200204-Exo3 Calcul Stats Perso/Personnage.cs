@@ -4,34 +4,48 @@ using System.Text;
 
 namespace _200204_Exo3_Calcul_Stats_Perso
 {
-    class Personnage
+    class Personnage : PersonnageAbstrait
     {
-        private string nom = null;
-        private Stats statsBase = null;
-        private Stats statsBonus = null;
-        List<Equipement> equipements = new List<Equipement>();
+        private List<Equipement> Equipements { get; set; }
 
-        public Personnage(string nom, Stats statsBase, Stats statsBonus)
+        public Personnage(string nom, int atk, int def, int pdv, int vit) : base(nom, atk, def, pdv, vit)
         {
-            this.nom = nom; 
-            this.statsBase = statsBase;
-            this.statsBonus = new Stats(AskData.askInt());
+
         }
 
-        private Stats calculStatsBonus()
+        public override void ajouterEquipement(Equipement e)
         {
-            int bonusPdv = 0;
-            int bonusAtk = 0;
-            int bonusDef = 0;
-            int bonusVit = 0;
+            base.ajouterEquipement(e);
+        }
 
-            foreach( Equipement e in equipements)
-            {
-                bonusPdv += e.getStats().
-            }
+        public override void ajouterEquipements(List<Equipement> le)
+        {
+            base.ajouterEquipements(le);
+        }
 
+        public override int[] calculerStatsBonus()
+        {
+            return base.calculerStatsBonus();
+        }
 
-            return new Stats(bonusAtk, bonusDef, bonusVit, bonusPdv, 'b');
+        public override string afficherEquipements()
+        {
+            return base.afficherEquipements();
+        }
+
+        override public string ToString()
+        {
+            int[] bonus = calculerStatsBonus();
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine(string.Format("Stats du personnage: {0} \n========", Nom));
+            builder.AppendLine(string.Format("ATK: {0} ({1}) -> {2}", Atk, bonus[0], bonus[0] + Atk));
+            builder.AppendLine(string.Format("DEF: {0} ({1}) -> {2}", Def, bonus[1], bonus[1] + Def));
+            builder.AppendLine(string.Format("PDV: {0}", Pdv));
+            builder.AppendLine(string.Format("VIT: {0}", Vit));
+            builder.AppendLine(string.Format(""));
+            builder.AppendLine(afficherEquipements());
+
+            return builder.ToString();
         }
     }
 }

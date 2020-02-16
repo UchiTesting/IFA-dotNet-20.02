@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\200204-ClassesUtilitaires\200204-ClassesUtilitaires.csproj" />
+    <Reference Include="Simple IO">
+      <HintPath>..\..\libs\UT_UtilityClasses\Uchitesting Utility Classes\Simple IO\bin\Debug\netstandard2.0\Simple IO.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

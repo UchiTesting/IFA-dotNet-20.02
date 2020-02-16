@@ -22,7 +22,7 @@ namespace _200204_Exo1
 
         override public string ToString()
         {
-            return 
+            return "Frau: Nom: " + nom + ", Prenom: " + prenom + ", Date de naissance: " + dateDeNaissance;
         }
     }
 }

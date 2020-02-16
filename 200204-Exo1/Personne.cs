@@ -6,9 +6,9 @@ namespace _200204_Exo1
 {
     class Personne
     {
-        private string nom;
-        private string prenom;
-        private string dateDeNaissance;
+        protected string nom;
+        protected string prenom;
+        protected string dateDeNaissance;
 
         public Personne(string nom, string prenom, string dateDeNaissance="01-01-1970")
         {
@@ -49,7 +49,7 @@ namespace _200204_Exo1
 
         override public string ToString()
         {
-            return "Nom: "+nom+"Prenom: "+prenom+", Date de naissance: " + dateDeNaissance;
+            return "Nom: "+nom+", Prenom: "+prenom+", Date de naissance: " + dateDeNaissance;
         }
     }
 

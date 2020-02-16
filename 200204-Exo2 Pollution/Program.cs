@@ -110,7 +110,7 @@ namespace _200204_Exo2_Pollution
 		{
 			Console.WriteLine("Création d'une Entreprise:\n========");
 
-			return new PersMorale(askString("Nom: "), askString("Prenom: "), askString("DDN: "), askString("ADR: "), askString("SIRET: "), askInt("Coeff. Pollution: "), creerPersonneAdmin());
+			return new PersMorale(askString("Nom: "), "", askString("DDC: "), askString("ADR: "), askString("SIRET: "), askInt("Coeff. Pollution: "), creerPersonneAdmin());
 		}
 
 		static Voiture creerVoiture()

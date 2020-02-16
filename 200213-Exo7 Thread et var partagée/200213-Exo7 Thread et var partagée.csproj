@@ -3,11 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_200204_Exo1</RootNamespace>
+    <RootNamespace>_200213_Exo7_Thread_et_var_partagée</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="..\.editorconfig" Link=".editorconfig" />
-  </ItemGroup>
 
 </Project>

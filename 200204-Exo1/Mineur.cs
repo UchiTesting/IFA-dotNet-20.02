@@ -27,5 +27,14 @@ namespace _200204_Exo1
         {
             tuteur = value;
         }
+
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine("Kand: Nom: " + nom + ", Prenom: " + prenom + ", Date de naissance: " + dateDeNaissance + "")
+                .AppendLine("   Tuteur -> " + tuteur.ToString());
+
+            return builder.ToString();
+        }
     }
 }

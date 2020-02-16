@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Simple_IO;
 
 namespace _200204_Exo3_Calcul_Stats_Perso
 {
@@ -21,6 +22,11 @@ namespace _200204_Exo3_Calcul_Stats_Perso
             this.type = type;
         }
 
+        public Stats() : this(0, 0, 0, 0) // Default Constructor
+        {
+            //
+        }
+
         public int Atk { get => atk; set => atk = value; }
         public int Def { get => def; set => def = value; }
         public int Vitesse { get => vitesse; set => vitesse = value; }
@@ -38,10 +44,11 @@ namespace _200204_Exo3_Calcul_Stats_Perso
             {
                 typeStats = "bonus";
             }
-            string str;
+            //string str;
 
             return "Stats "+typeStats+" -> [PDV: "+pdv+", ATK: "+atk+", DEF: "+def+", VIT: "+vitesse+"]";
         }
+
 
         public void add(Stats stats)
         {
@@ -51,9 +58,29 @@ namespace _200204_Exo3_Calcul_Stats_Perso
             this.vitesse += stats.vitesse;
         }
 
-        public Stats static createStats()
+        internal static Stats sumList(List<Stats> statList, char forcedType='g')
         {
+            Stats stats = new Stats(0, 0, 0, 0, forcedType);
 
+            foreach (Stats statItem in statList)
+            {
+                stats.add(statItem);
+            }
+
+            return stats;
+        }
+
+        internal static Stats createStats(char forcedType='g')
+        {
+            Console.WriteLine("Creation des stats:\n========\n");
+
+            return new Stats(
+                AskData.askInt("ATK: "),
+                AskData.askInt("DEF: "),
+                AskData.askInt("PDV: "),
+                AskData.askInt("VIT: "),
+                AskData.askChar("Type (g/b): ")
+                );
         }
 
     }
