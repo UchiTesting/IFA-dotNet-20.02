@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\200213-Exo8 Thread affichage multiple de lettres\200213-Exo8 Thread affichage multiple de lettres.csproj" />
+    <ProjectReference Include="..\200213-Exo8 Thread affichage multiple de lettres\200213-Exo08 Thread affichage multiple de lettres.csproj" />
   </ItemGroup>
 
 </Project>

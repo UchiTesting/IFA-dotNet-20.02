@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200204-Exemples1", "C:\Users\EminoMeneko\source\repos\200204-Exo1\200204-Exo1\200204-Exemples1.csproj", "{1BBC7F12-E65D-4877-8083-58DD30BD2FA0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200204-Exo1 Service hospitalier", "200204-Exo1\200204-Exo1 Service hospitalier.csproj", "{F4C9D306-E499-404E-8B9C-1537493D8F81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200204-Exo01 Service hospitalier", "200204-Exo1\200204-Exo01 Service hospitalier.csproj", "{F4C9D306-E499-404E-8B9C-1537493D8F81}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200204-Exo2 Pollution", "200204-Exo2 Pollution\200204-Exo2 Pollution.csproj", "{02846F66-0906-45CB-A9D8-73A7AE564C9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200204-Exo02 Pollution", "200204-Exo2 Pollution\200204-Exo02 Pollution.csproj", "{02846F66-0906-45CB-A9D8-73A7AE564C9E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200204-Exo3 Calcul Stats Perso", "200204-Exo3 Calcul Stats Perso\200204-Exo3 Calcul Stats Perso.csproj", "{C9E29594-1AA7-4D4F-A4B7-8BE829578C12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200204-Exo03 Calcul Stats Perso", "200204-Exo3 Calcul Stats Perso\200204-Exo03 Calcul Stats Perso.csproj", "{C9E29594-1AA7-4D4F-A4B7-8BE829578C12}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200206-Exo4 Banque", "200206-Exo4  Banque\200206-Exo4 Banque.csproj", "{0745F2DD-6243-4337-89EE-6473EEFF7E12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200206-Exo04 Banque", "200206-Exo4  Banque\200206-Exo04 Banque.csproj", "{0745F2DD-6243-4337-89EE-6473EEFF7E12}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design Pattern", "Design Pattern", "{B3FC59DC-E3B1-4D59-B373-308E129BC14A}"
 EndProject
@@ -28,19 +28,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cours", "Cours", "{92AFDA92
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200211-Threads", "200211-Threads\200211-Threads.csproj", "{03FFAE7E-13BC-4217-9581-72C402E02ACC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200211-Exo5  Random Exec Time", "200211-Exo5  Random Exec Time\200211-Exo5  Random Exec Time.csproj", "{DE58DC13-9A6F-453A-9B23-6FCA0E468A58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200211-Exo05  Random Exec Time", "200211-Exo5  Random Exec Time\200211-Exo05  Random Exec Time.csproj", "{DE58DC13-9A6F-453A-9B23-6FCA0E468A58}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200211-Exo6 MultiThread Fibonacci", "200211-Exo6 MultiThread Fibonacci\200211-Exo6 MultiThread Fibonacci.csproj", "{3D3287B2-4F2E-4B65-B9CA-BB7FE3032142}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200211-Exo06 MultiThread Fibonacci", "200211-Exo6 MultiThread Fibonacci\200211-Exo06 MultiThread Fibonacci.csproj", "{3D3287B2-4F2E-4B65-B9CA-BB7FE3032142}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{931BCFDD-974F-4A9F-9F79-F8422D910ECC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200212-Exo4-BanqueTest", "200212-Exo4-BanqueTest\200212-Exo4-BanqueTest.csproj", "{DF1B0F71-CC7C-48F8-B176-4A81ADC01068}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200213-Exo7 Thread et var partagée", "200213-Exo7 Thread et var partagée\200213-Exo7 Thread et var partagée.csproj", "{7CFD2B50-0875-4651-974C-60CBCF5CCA3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200213-Exo07 Thread et var partagée", "200213-Exo7 Thread et var partagée\200213-Exo07 Thread et var partagée.csproj", "{7CFD2B50-0875-4651-974C-60CBCF5CCA3D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200213-Exo8 Thread affichage multiple de lettres", "200213-Exo8 Thread affichage multiple de lettres\200213-Exo8 Thread affichage multiple de lettres.csproj", "{EE0EF414-0047-4707-A6D4-BBF848B40993}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200213-Exo08 Thread affichage multiple de lettres", "200213-Exo8 Thread affichage multiple de lettres\200213-Exo08 Thread affichage multiple de lettres.csproj", "{EE0EF414-0047-4707-A6D4-BBF848B40993}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "200213-Exo8 Thread affichage multiple de lettresTests", "200213-Exo8 Thread affichage multiple de lettresTests\200213-Exo8 Thread affichage multiple de lettresTests.csproj", "{33405761-2E47-48C5-8DCB-0564E741D63D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200213-Exo8 Thread affichage multiple de lettresTests", "200213-Exo8 Thread affichage multiple de lettresTests\200213-Exo8 Thread affichage multiple de lettresTests.csproj", "{33405761-2E47-48C5-8DCB-0564E741D63D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200217-Exo09 Fichiers", "200217-Fichiers\200217-Exo09 Fichiers.csproj", "{01D57340-70FC-4791-A1BB-E56CB18DFAC1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200217-Exo10 Mutex", "200217-Exo10 Mutex\200217-Exo10 Mutex.csproj", "{74D1D25A-3C06-4956-8A84-793CE0CBA45D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200217-Exo 11 Partage de Fichier", "200217-Partage de Fichier\200217-Exo 11 Partage de Fichier.csproj", "{9C227667-EDB7-450A-AF36-167EE53691BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -100,6 +106,18 @@ Global
 		{33405761-2E47-48C5-8DCB-0564E741D63D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33405761-2E47-48C5-8DCB-0564E741D63D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33405761-2E47-48C5-8DCB-0564E741D63D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01D57340-70FC-4791-A1BB-E56CB18DFAC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D57340-70FC-4791-A1BB-E56CB18DFAC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D57340-70FC-4791-A1BB-E56CB18DFAC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D57340-70FC-4791-A1BB-E56CB18DFAC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D1D25A-3C06-4956-8A84-793CE0CBA45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D1D25A-3C06-4956-8A84-793CE0CBA45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D1D25A-3C06-4956-8A84-793CE0CBA45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D1D25A-3C06-4956-8A84-793CE0CBA45D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C227667-EDB7-450A-AF36-167EE53691BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C227667-EDB7-450A-AF36-167EE53691BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C227667-EDB7-450A-AF36-167EE53691BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C227667-EDB7-450A-AF36-167EE53691BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -118,6 +136,9 @@ Global
 		{7CFD2B50-0875-4651-974C-60CBCF5CCA3D} = {2EAF8499-AE58-4D0A-98DD-8FCFF176F889}
 		{EE0EF414-0047-4707-A6D4-BBF848B40993} = {2EAF8499-AE58-4D0A-98DD-8FCFF176F889}
 		{33405761-2E47-48C5-8DCB-0564E741D63D} = {931BCFDD-974F-4A9F-9F79-F8422D910ECC}
+		{01D57340-70FC-4791-A1BB-E56CB18DFAC1} = {2EAF8499-AE58-4D0A-98DD-8FCFF176F889}
+		{74D1D25A-3C06-4956-8A84-793CE0CBA45D} = {2EAF8499-AE58-4D0A-98DD-8FCFF176F889}
+		{9C227667-EDB7-450A-AF36-167EE53691BB} = {2EAF8499-AE58-4D0A-98DD-8FCFF176F889}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {008FE6AF-3420-49DE-A20D-49BA912B30B1}

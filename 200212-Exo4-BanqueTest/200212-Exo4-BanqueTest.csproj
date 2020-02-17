@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\200206-Exo4  Banque\200206-Exo4 Banque.csproj" />
+    <ProjectReference Include="..\200206-Exo4  Banque\200206-Exo04 Banque.csproj" />
   </ItemGroup>
 
 </Project>
