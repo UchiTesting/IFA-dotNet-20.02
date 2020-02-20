@@ -11,10 +11,7 @@ namespace _200220_Exo14_Concessionnaires_JSON
         private string Model { get; set; }
         private int Power { get; set; }
 
-        public Car()
-        {
-
-        }
+        public Car(): this("defaultBrand","defaultModel",0){}
 
         public Car(string brand, string model, int power)
         {
@@ -23,7 +20,7 @@ namespace _200220_Exo14_Concessionnaires_JSON
             Power = power;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return string.Format("{0} {1} {2} cc", Brand, Model, Power);
         }
