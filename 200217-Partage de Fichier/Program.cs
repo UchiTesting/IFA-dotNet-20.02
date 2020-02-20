@@ -54,6 +54,8 @@ namespace _200217_Partage_de_Fichier
                 }
                 myStopWatch.Stop();
                 endTime = myStopWatch.ElapsedMilliseconds;
+
+                Console.SetCursorPosition(70, 0);
                 Console.WriteLine("Time elapsed: {0} ms", (float)((endTime -startTime)));
             }
 
