@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using static Simple_IO.AskData; // static allows using a class directly.
@@ -12,11 +14,13 @@ namespace _200220_Exo14_Concessionnaires_JSON
 {
     class Program
     {
-        private const string Path = "MyListOfConcessionaries.bin";
+        private const string FILE_NAME = "MyListOfConcessionaries.bin";
         static List<Concessionary> listOfConcessionaries = null;
         static MainCanvas mc = null;
         static Canvas DisplayCanvas = null;
         static Canvas MenuCanvas = null;
+        static StreamWriter sw = null;
+
         static void Main(string[] args)
         {
             listOfConcessionaries = new List<Concessionary>();
@@ -104,14 +108,29 @@ namespace _200220_Exo14_Concessionnaires_JSON
         private static void LoadConcessionaries()
         {
             string jsonString;
-            StreamReader sr = new StreamReader(Path);
+            StreamReader sr = new StreamReader(FILE_NAME);
             jsonString = sr.ReadLine();
             sr.Close();
+            listOfConcessionaries = JsonSerializer.Deserialize<List<Concessionary>>(jsonString);
         }
 
         private static void SaveConcessionaries()
         {
-            throw new NotImplementedException();
+            string jsonString;
+            jsonString = JsonSerializer.Serialize(listOfConcessionaries);
+            try
+            {
+                sw = new StreamWriter(FILE_NAME);
+                sw.WriteLine(jsonString);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                sw.Close();
+            }
         }
 
         private static void RemoveConcessionary(int index)
