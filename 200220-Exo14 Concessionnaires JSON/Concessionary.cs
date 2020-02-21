@@ -5,9 +5,10 @@ using System.Text;
 
 namespace _200220_Exo14_Concessionnaires_JSON
 {
+    [Serializable]
     class Concessionary
     {
-        private List<Car> listOfCars;
+        public List<Car> listOfCars;
         public  string Brand { get; set; }
 
         public Concessionary(string brand)

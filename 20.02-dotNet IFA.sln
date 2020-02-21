@@ -50,11 +50,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200217-Exo11 Partage de Fic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200218-Exo12 Echanges entre processus", "200218-Exo12 Echanges entre processus\200218-Exo12 Echanges entre processus.csproj", "{8DD5D0B8-4BFD-49D2-909B-2BF17CA23B39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "200220-Serialisation", "200220-Serialisation\200220-Serialisation.csproj", "{B463D5CD-EEF5-4D85-8B0B-B1A2B9CA3C22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200220-Serialisation", "200220-Serialisation\200220-Serialisation.csproj", "{B463D5CD-EEF5-4D85-8B0B-B1A2B9CA3C22}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200220-Exo13 Serialisation Binaire de voitures", "200220-Exo13 Serialisation Binaire de voitures\200220-Exo13 Serialisation Binaire de voitures.csproj", "{A0CB12C9-8245-4289-9F5D-A3BA2640F1D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "200220-Exo14 Concessionnaires JSON", "200220-Exo14 Concessionnaires JSON\200220-Exo14 Concessionnaires JSON.csproj", "{003BB328-3157-411E-B02D-2082941D2A19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200220-Exo14 Concessionnaires JSON", "200220-Exo14 Concessionnaires JSON\200220-Exo14 Concessionnaires JSON.csproj", "{003BB328-3157-411E-B02D-2082941D2A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "200221-Exo15 Serialisation multiple", "200221-Serialisation multiple\200221-Exo15 Serialisation multiple.csproj", "{CBB87521-A350-46EB-A430-262B8C113302}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -142,6 +144,10 @@ Global
 		{003BB328-3157-411E-B02D-2082941D2A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{003BB328-3157-411E-B02D-2082941D2A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{003BB328-3157-411E-B02D-2082941D2A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB87521-A350-46EB-A430-262B8C113302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB87521-A350-46EB-A430-262B8C113302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB87521-A350-46EB-A430-262B8C113302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB87521-A350-46EB-A430-262B8C113302}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -167,6 +173,7 @@ Global
 		{B463D5CD-EEF5-4D85-8B0B-B1A2B9CA3C22} = {92AFDA92-2609-4E75-9A24-C50F3D357748}
 		{A0CB12C9-8245-4289-9F5D-A3BA2640F1D5} = {2EAF8499-AE58-4D0A-98DD-8FCFF176F889}
 		{003BB328-3157-411E-B02D-2082941D2A19} = {2EAF8499-AE58-4D0A-98DD-8FCFF176F889}
+		{CBB87521-A350-46EB-A430-262B8C113302} = {2EAF8499-AE58-4D0A-98DD-8FCFF176F889}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {008FE6AF-3420-49DE-A20D-49BA912B30B1}

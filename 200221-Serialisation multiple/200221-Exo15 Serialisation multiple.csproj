@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_200221_Exo15_Serialisation_multiple</RootNamespace>
+    <AssemblyName>200221-Exo15 Serialisation multiple</AssemblyName>
+  </PropertyGroup>
+
+</Project>
