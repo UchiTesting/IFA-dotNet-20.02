@@ -15,23 +15,25 @@ namespace _200221_Exo15_Serialisation_multiple
         {
             Console.CursorVisible = false;
             Console.WriteLine("Exo 15 : Multiple Serialisation");
-            int max = 1000000;
-            Stopwatch watch = new Stopwatch();
-            long startTime = watch.ElapsedMilliseconds;
-            for (int i = 0; i < max;i++)
-            {
-                cars.Add(new Car(i));
-                Console.SetCursorPosition(0, 1);
-                DisplayProgressBar(i,max);
-            }
-            long endTime = watch.ElapsedMilliseconds;
+            //int max = 1000000;
+            //Stopwatch watch = new Stopwatch();
+            //long startTime = watch.ElapsedMilliseconds;
+            //for (int i = 0; i < max;i++)
+            //{
+            //    cars.Add(new Car(i));
+            //    Console.SetCursorPosition(0, 1);
+            //    DisplayProgressBar(i,max);
+            //}
+            //long endTime = watch.ElapsedMilliseconds;
 
-            Console.WriteLine("Time elapsed filling the table: {0} ms", endTime-startTime);
-            startTime = watch.ElapsedMilliseconds;
-            SerializeATonOfCars();
+            //Console.WriteLine("Time elapsed filling the table: {0} ms", endTime-startTime);
+            //startTime = watch.ElapsedMilliseconds;
+            //SerializeATonOfCars();
 
-            endTime = watch.ElapsedMilliseconds;
-            Console.WriteLine("Time elapsed writting to file: {0} ms", endTime-startTime);
+            //endTime = watch.ElapsedMilliseconds;
+            //Console.WriteLine("Time elapsed writting to file: {0} ms", endTime-startTime);
+
+            DeserializeCars();
 
 
         }
@@ -65,17 +67,29 @@ namespace _200221_Exo15_Serialisation_multiple
         {
 
             XmlSerializer x = new XmlSerializer(typeof(Car));
-            StreamWriter sw = new StreamWriter(fileName,true);
-            x.Serialize(sw, obj);
-            sw.Close();
+            Stream stream = new StreamWriter(fileName,true).BaseStream;
+            x.Serialize(stream, obj);
+            stream.Close();
         }
 
-        static void DeserializeCars()
+        static Car DeserializeACar()
         {
             XmlSerializer x = new XmlSerializer(typeof(Car));
             StreamReader sr = new StreamReader(fileName);
             Car c = (Car)x.Deserialize(sr);
             sr.Close();
+
+            return c;
+        }
+
+        static void DeserializeCars() {
+            StreamReader sr = new StreamReader(fileName);
+
+            while (!sr.EndOfStream)
+            {
+                Car c  = DeserializeACar();
+                c.ToString();
+            }
         }
     }
 }

@@ -12,12 +12,19 @@ namespace _200221_Exo15_Serialisation_multiple
         public Car(int id)
         {
             this.id = id;
-            name = "SomeFairlyLongString CAR"+id;
+            name = "CAR"+id;
         }
 
         public Car(): this(0)
         { 
-            name = "SomeFairlyLongString CAR"+id;
+            name = "CAR"+id;
         }
+
+        public override string ToString()
+        {
+            return "ID: "+id+" name: "+name;
+        }
+
+
     }
 }
