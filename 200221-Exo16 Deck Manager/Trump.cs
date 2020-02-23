@@ -10,6 +10,12 @@ namespace _200221_Exo16_Deck_Manager
         protected string name;
         protected string description;
 
+        protected Trump(string name, string description)
+        {
+            SetName(name);
+            SetDescription(description);
+        }
+
         public string GetDescription()
         {
             return description;
