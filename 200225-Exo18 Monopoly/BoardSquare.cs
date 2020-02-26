@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _200225_Exo18_Monopoly
 {
-    class BoardSquare
+    interface BoardSquare
     {
     }
 }

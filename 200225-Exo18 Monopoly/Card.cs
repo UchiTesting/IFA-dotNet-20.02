@@ -4,8 +4,13 @@ using System.Text;
 
 namespace _200225_Exo18_Monopoly
 {
-    class Card
+    class Card : NamedElement
     {
         public string effect;
+
+        public Card(string name, string effect):base(name)
+        {
+            this.effect = effect;
+        }
     }
 }

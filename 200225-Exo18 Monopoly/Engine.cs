@@ -24,6 +24,11 @@ namespace _200225_Exo18_Monopoly
             SetupNbPlayers();
 
             squares = new List<BoardSquare>();
+            InitBoard();
+        }
+
+        private static void InitBoard()
+        {
             squares.Add(new OtherSquare());
         }
 
@@ -75,9 +80,15 @@ namespace _200225_Exo18_Monopoly
 
         }
 
+        private void ProposeTerrainAquisition()
+        {
+            throw new NotImplementedException();
+        }
+
         private bool SquareIsBuyable()
         {
-
+            //
+            return false;
         }
 
         /// <summary>
@@ -117,7 +128,17 @@ namespace _200225_Exo18_Monopoly
         /// <returns></returns>
         public bool checkEndOfGame()
         {
-            throw new NotImplementedException();
+            int count = players.Count;
+            foreach(Player p in players)
+            {
+                if (p.isBankrupt)
+                    count--;
+
+                if (count <= 1)
+                    return true;
+            }
+
+            return false;
         }
     }
 }

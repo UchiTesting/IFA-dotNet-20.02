@@ -8,8 +8,9 @@ namespace _200225_Exo18_Monopoly
     {
         public int balance;
         public int position;
-        public bool CanPlay;
+        public bool CanPlay; // Player is allowed to play
         public bool isInPrison;
+        public bool isBankrupt;
 
 
         public Player() : this("")
@@ -18,6 +19,7 @@ namespace _200225_Exo18_Monopoly
             position = 0;
             balance = 0;
             isInPrison = false;
+            isBankrupt = false;
         }
 
         public Player(string name) : base(name) { }
