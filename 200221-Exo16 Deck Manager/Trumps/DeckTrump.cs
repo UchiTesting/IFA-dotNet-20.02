@@ -36,5 +36,18 @@ namespace _200221_Exo16_Deck_Manager.Trumps
         {
             this.t = t;
         }
+
+        public override bool Equals(object obj)
+        {
+            if ((obj == null) || (!this.t.GetType().Equals(obj.GetType())))
+            {
+                return false;
+            }
+            else
+            {
+                Trump t = (Trump)obj;
+                return (this.t.GetName() == t.GetName()) && (this.t.GetDescription() == t.GetDescription());
+            };
+        }
     }
 }
