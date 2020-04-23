@@ -25,7 +25,7 @@ namespace _200204_Exo2_Pollution
         public double payerPollution(double quantitePollution, double tauxPollution)
         {
             double taxe = quantitePollution * tauxPollution;
-            Console.WriteLine(respLegal + " payes " + taxe);
+            Console.WriteLine(respLegal + " pays " + taxe);
             return taxe;
         }
     }

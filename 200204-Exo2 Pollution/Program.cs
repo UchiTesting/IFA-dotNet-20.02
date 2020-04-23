@@ -137,7 +137,16 @@ namespace _200204_Exo2_Pollution
 				Console.WriteLine("Mois "+i);
 				for (int j = 0; j < taille; j++)
 				{
-					tab[j].payerPollution(tab[j].calculerPollution(30), taxe * (1+i/10));
+					int nbJours = 30;
+					switch (i)
+					{
+						case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+							nbJours = 31;
+							break;
+						case 2: nbJours = 28;
+							break;
+					}
+					tab[j].payerPollution(tab[j].calculerPollution(nbJours), taxe * (1+i/10));
 				}
 			}
 		}

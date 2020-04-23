@@ -110,8 +110,6 @@ namespace _200206_Exo4_Banque
 
         public static void ProcessBank(Bank b)
         {
-
-
             char choice;
 
             do

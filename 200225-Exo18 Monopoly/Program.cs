@@ -7,6 +7,10 @@ namespace _200225_Exo18_Monopoly
         static void Main(string[] args)
         {
             Console.WriteLine("Exo 18: Monopoly");
+
+            Engine engine = Engine.getInstance();
+
+            engine.InitGame();
             
              
         }

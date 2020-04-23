@@ -26,7 +26,7 @@ namespace _200204_Exo2_Pollution
 
         override public string ToString()
         {
-            return "Nom: "+nom+", Prenom: "+prenom+", DDN: "+dateDeNaissance+", ADR: " + adresse;
-        }
+            return $"{nom} {prenom} born {dateDeNaissance} living in {adresse }";
+    }
     }
 }

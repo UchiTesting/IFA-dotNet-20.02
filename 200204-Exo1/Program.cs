@@ -19,7 +19,7 @@ namespace _200204_Exo1
                 choix = Console.ReadKey().KeyChar;
                 Console.WriteLine();
 
-                if (string.Format("hfm").Contains(choix))
+                if ("hfm".Contains(choix))
                 {
                     taille++;
                     Array.Resize(ref personnes, taille);

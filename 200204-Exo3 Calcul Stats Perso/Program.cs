@@ -137,7 +137,7 @@ namespace _200204_Exo3_Calcul_Stats_Perso
 
                 foreach (Personnage perso in persos)
                 {
-                    builder.AppendLine(i + ") " + perso.Nom);
+                    builder.AppendLine($"{i}) {perso.Nom}");
                     i += 1;
                 }
 

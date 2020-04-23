@@ -8,9 +8,12 @@ namespace _200225_Exo18_Monopoly
     {
         public string name;
 
+        public string GetName() { return name; }
+        public void SetName(string newName) { name = newName; }
+
         public NamedElement(string newName)
         {
-            name = newName;
+            SetName(newName);
         }
     }
 }

@@ -4,7 +4,10 @@ using System.Text;
 
 namespace _200225_Exo18_Monopoly
 {
-    interface BoardSquare
+    public abstract class BoardSquare : NamedElement
     {
+        public BoardSquare(string newName) : base(newName)
+        {
+        }
     }
 }

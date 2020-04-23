@@ -14,7 +14,7 @@ namespace Decorator
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Design Pattern Decorator");
+            Console.WriteLine("Design Pattern _200210-Decorator");
             Voiture v = creerVoiture();
 
             Console.WriteLine("Ajouter des options: ");

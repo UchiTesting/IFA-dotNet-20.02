@@ -1,103 +1,174 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="_200225_Exo18_Monopoly.AbstractTerrain">
-    <Position X="3" Y="1.75" Width="1.5" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="_200225_Exo18_Monopoly.BoardSquare" Collapsed="true">
+    <Position X="33.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAIAABAAAQAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AbstractTerrain.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BoardSquare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.BuildableLand" Collapsed="true">
+    <Position X="31.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAQgAAAAAA=</HashCode>
+      <FileName>BuildableLand.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="_200225_Exo18_Monopoly.BuildableLand">
-    <Position X="3" Y="4.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>BuildableLand.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="_200225_Exo18_Monopoly.Building">
-    <Position X="3" Y="5.5" Width="1.5" />
+  <Class Name="_200225_Exo18_Monopoly.Building" Collapsed="true">
+    <Position X="31.25" Y="10.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Building.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_200225_Exo18_Monopoly.Card">
-    <Position X="8" Y="0.5" Width="1.5" />
+    <Position X="45" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Card.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_200225_Exo18_Monopoly.Dice">
-    <Position X="9.75" Y="0.5" Width="1.5" />
+  <Class Name="_200225_Exo18_Monopoly.Dice" Collapsed="true">
+    <Position X="47.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Dice.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_200225_Exo18_Monopoly.Engine">
-    <Position X="11.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AwAAABAAAAAAAAAAAAICQAAAAABGAAAAIQAAAAAAAAA=</HashCode>
-      <FileName>Engine.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="_200225_Exo18_Monopoly.Hotel">
-    <Position X="4" Y="7.25" Width="1.5" />
+  <Class Name="_200225_Exo18_Monopoly.Hotel" Collapsed="true">
+    <Position X="31.25" Y="12.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hotel.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_200225_Exo18_Monopoly.House">
-    <Position X="1.75" Y="7.25" Width="1.5" />
+  <Class Name="_200225_Exo18_Monopoly.House" Collapsed="true">
+    <Position X="32.25" Y="11.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>House.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_200225_Exo18_Monopoly.Land">
-    <Position X="0.5" Y="4.25" Width="1.5" />
+  <Class Name="_200225_Exo18_Monopoly.Land" Collapsed="true">
+    <Position X="32.25" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>Land.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="_200225_Exo18_Monopoly.NamedElement">
-    <Position X="5.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>NamedElement.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="_200225_Exo18_Monopoly.OtherSquare">
-    <Position X="0.5" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>OtherSquare.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="_200225_Exo18_Monopoly.Player">
-    <Position X="5.5" Y="2.5" Width="1.5" />
+  <Class Name="_200225_Exo18_Monopoly.NamedElement" Collapsed="true">
+    <Position X="35.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAIAgYgAAAQQAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAQAAABAA=</HashCode>
+      <FileName>NamedElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.Player">
+    <Position X="42.5" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAKAEQAAgABhAAARBgAAKIAIAgAAAIBAAAAI=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_200225_Exo18_Monopoly.Program">
-    <Position X="9.75" Y="2.5" Width="1.5" />
+  <Class Name="_200225_Exo18_Monopoly.Engine">
+    <Position X="49.25" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AwBAABEAAgAAAAIAAoICQAEAAABGAAQAYQAAAAAAAAA=</HashCode>
+      <FileName>Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.Program" Collapsed="true">
+    <Position X="47.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="_200225_Exo18_Monopoly.PIECES">
-    <Position X="8" Y="2.5" Width="1.5" />
+  <Class Name="_200225_Exo18_Monopoly.OtherSquares.OtherSquare" Collapsed="true">
+    <Position X="36.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OtherSquares\OtherSquare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.OtherSquares.Prison" Collapsed="true">
+    <Position X="34.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OtherSquares\Prison.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.OtherSquares.PrisonVisit" Collapsed="true">
+    <Position X="35.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OtherSquares\PrisonVisit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.OtherSquares.StartSquare" Collapsed="true">
+    <Position X="39.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OtherSquares\StartSquare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.OtherSquares.LuxuryTax" Collapsed="true">
+    <Position X="38.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OtherSquares\LuxuryTax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.OtherSquares.IncomeTax" Collapsed="true">
+    <Position X="36.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OtherSquares\IncomeTax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.OtherSquares.GoToPrison" Collapsed="true">
+    <Position X="36.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OtherSquares\GoToPrison.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.OtherSquares.FreeParking" Collapsed="true">
+    <Position X="40.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OtherSquares\FreeParking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.OtherSquares.CommunityChest" Collapsed="true">
+    <Position X="37.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OtherSquares\CommunityChest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.OtherSquares.ChanceSquare" Collapsed="true">
+    <Position X="38.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OtherSquares\ChanceSquare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_200225_Exo18_Monopoly.AbstractTerrain" Collapsed="true">
+    <Position X="32.25" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQIAAACIgpAAAAFEAAAAARAFAAAAAAAAAABQBAAQBQA=</HashCode>
+      <FileName>AbstractTerrain.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="_200225_Exo18_Monopoly.PIECES" Collapsed="true">
+    <Position X="47.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgEAACAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Player.cs</FileName>
+      <FileName>PiecesEnum.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />
