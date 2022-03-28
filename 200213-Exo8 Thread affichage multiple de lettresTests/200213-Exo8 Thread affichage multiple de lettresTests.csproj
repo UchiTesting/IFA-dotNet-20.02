@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>_200213_Exo8_Thread_affichage_multiple_de_lettresTests</RootNamespace>
 
     <IsPackable>false</IsPackable>
