@@ -12,7 +12,7 @@ namespace _200206_Exo4_Banque
         public float Ratio { get; set; }
         public string Currency { get; set; }
 
-        public Account(string id, decimal balance, float ratio, string currency = "€")
+        public Account(string id, decimal balance, float ratio, string currency = "EUR")
         {
             Id = id;
             Balance = balance;
@@ -23,6 +23,7 @@ namespace _200206_Exo4_Banque
         public void Deposit(decimal d)
         {
             Balance += d;
+            ComputeInterest();
         }
 
         public void Withdraw(decimal d)
@@ -35,6 +36,8 @@ namespace _200206_Exo4_Banque
             {
                 Balance -= d;
             }
+
+            ComputeInterest();
         }
 
         public override string ToString()
@@ -50,14 +53,9 @@ namespace _200206_Exo4_Banque
 
         public void DisplayBalance()
         {
-            Console.WriteLine("Balance: " + Balance);
+            Console.WriteLine($"Balance: {Balance} {Currency}");
         }
 
-        protected decimal ComputeInterest()
-        {
-            decimal interest;
-            interest = Balance * (decimal)Ratio;
-            return interest;
-        }
+        protected decimal ComputeInterest() => Balance += Balance * Math.Round(((decimal)Ratio/100),2);
     }
 }

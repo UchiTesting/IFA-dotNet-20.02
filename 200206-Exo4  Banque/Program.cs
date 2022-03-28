@@ -28,8 +28,8 @@ namespace _200206_Exo4_Banque
             do
             {
                 DisplayMainMenu();
-                choix = AskData.askChar();
-                Console.WriteLine("");
+                choix = AskData.AskChar();
+                Console.WriteLine(String.Empty);
                 Bank b;
 
                 switch (choix)
@@ -89,8 +89,8 @@ namespace _200206_Exo4_Banque
         public static Bank CreateBank()
         {
             DisplayColouredMessage("Add a bank:\n========\n", ConsoleColor.Cyan);
-            string nom = AskData.askString("Name: ");
-            string adresse = AskData.askString("Address: ");
+            string nom = AskData.AskString("Name: ");
+            string adresse = AskData.AskString("Address: ");
             return new Bank(nom, adresse);
         }
 
@@ -100,7 +100,7 @@ namespace _200206_Exo4_Banque
 
             if (listOfBanks.Count > 0)
             {
-                string idBanque = AskData.askString("Bank name: ");
+                string idBanque = AskData.AskString("Bank name: ");
 
                 b = listOfBanks.Find(item => item.Name.Equals(idBanque, StringComparison.CurrentCulture));
             }
@@ -115,7 +115,7 @@ namespace _200206_Exo4_Banque
             do
             {
                 DisplayBankMenu();
-                choice = AskData.askChar("Choice: ");
+                choice = AskData.AskChar("Choice: ");
 
                 Account c;
 
@@ -196,7 +196,7 @@ namespace _200206_Exo4_Banque
         public static Account SelectAccount(Bank b)
         {
             b.listAccounts();
-            string id = AskData.askString("Account ID: ");
+            string id = AskData.AskString("Account ID: ");
             Account c = b.LookupAccount(id);
 
             return c;
@@ -210,18 +210,18 @@ namespace _200206_Exo4_Banque
             do
             {
                 DisplayAccountMenu();
-                choice = AskData.askChar();
+                choice = AskData.AskChar();
 
                 decimal d;
 
                 switch (choice)
                 {
                     case 'a': // Deposit
-                        d = AskData.askDecimal("Sum to deposit: ");
+                        d = AskData.AskDecimal("Sum to deposit: ");
                         c.Deposit(d);
                         break;
                     case 'b': // Withdrawal
-                        d = AskData.askDecimal("Sum to withdraw: ");
+                        d = AskData.AskDecimal("Sum to withdraw: ");
                         c.Withdraw(d);
                         break;
                     case 'c': // See balance
