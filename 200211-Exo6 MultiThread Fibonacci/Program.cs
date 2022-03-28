@@ -41,7 +41,7 @@ namespace _200211_Exo6_MultiThread_Fibonacci
         {
             int[] tabVal = (int[])values;
             int n = tabVal[0];
-            int m = tabVal[1];
+            int m = tabVal[1]+1;
 
             Stopwatch sw = Stopwatch.StartNew();
             long startTime = sw.ElapsedMilliseconds;
@@ -49,7 +49,7 @@ namespace _200211_Exo6_MultiThread_Fibonacci
             lock (synlock)
             {
                 Console.SetCursorPosition(0, m + 1);
-                Console.WriteLine("Starting Fibonacci {0} with n = {1}", m, n);
+                Console.WriteLine($"Starting Fibonacci {m,2} with n = {n}");
             }
 
             int nb1 = 0;
