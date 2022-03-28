@@ -89,7 +89,7 @@ namespace _200213_Exo8_Thread_affichage_multiple_de_lettres
 
         public static string displayThreadInfo(Thread t)
         {
-            return string.Format("{0,5}\t{1,5}", t.ManagedThreadId, t.ThreadState);
+            return $"{t.ManagedThreadId,5}\t{t.ThreadState,5}";
         }
 
         public static string displayThreadList(List<Thread> threadList)
